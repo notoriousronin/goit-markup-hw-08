@@ -17,13 +17,21 @@
       <div class="header__container">
         <a href="./index.html" class="header__logo">Web<span class="logo__title">Studio</span></a>
         <nav>
-          <ul class="header__site-nav">
-            <li class="site-nav__item"><a href="" class="site-nav__link--current">Студия</a></li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-          </ul>
+          <button type="button" class="nav__btn is-open" aria-expanded="true" data-menu-button>
+            <svg width="19" height="19" aria-label="Переключатель мобильного меню">
+              <use class="icon__close" href="./images/icons.svg#icon-close"></use>
+              <use class="icon__menu" href="./images/icons.svg#icon-navi"></use>
+            </svg>
+          </button>
+          <div class="nav__cont" data-menu>
+            <ul class="header__site-nav">
+              <li class="site-nav__item"><a href="" class="site-nav__link--current">Студия</a></li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+            </ul>
+          </div>
         </nav>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -486,5 +494,6 @@
     </div>
     <!-- Скрипт -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

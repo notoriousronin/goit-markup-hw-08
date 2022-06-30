@@ -1,11 +1,13 @@
 .team {
   background-color: $third-bg-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 }
 
 .team__title {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 30px;
+  padding-top: 60px;
 
   font-weight: 700;
   font-size: 36px;
@@ -16,9 +18,9 @@
   color: $title-text-color;
 }
 
-.team__list {
-  display: flex;
-}
+// .team__list {
+//   display: flex;
+// }
 
 .team__item {
   width: calc((100% - 90px) / 4);
