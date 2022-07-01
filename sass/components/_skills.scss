@@ -7,6 +7,12 @@
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .skills__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .skills__title {
   color: $title-text-color;
   font-weight: 700;
@@ -16,10 +22,6 @@
   letter-spacing: 0.03em;
 
   margin-bottom: 50px;
-}
-
-.skills__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 // .skills__list {

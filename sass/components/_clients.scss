@@ -1,31 +1,59 @@
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+// .clients {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+.clients__item {
+  margin: 15px;
+  height: 92px;
+
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
 }
+
+@media screen and (max-width: 767px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .clients__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}
+
+// @media screen and (min-width: 480px) {
+//   .clients__item:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
+// }
 
 .clients__title {
   color: $title-text-color;
   font-weight: 700;
-  font-size: 36px;
+  // font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .clients__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .clients__link {
   display: flex;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -34,7 +62,8 @@
 
   transition: color $transition-animation, boder-color $transition-animation;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $accent-text-color;
     border: 1px solid $accent-text-color;
   }
