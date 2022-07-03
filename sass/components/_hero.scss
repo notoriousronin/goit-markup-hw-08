@@ -1,24 +1,40 @@
 .hero {
-  background-color: $second-bg-color;
   text-align: center;
-  padding: 200px 0;
 
-  max-width: 1600px;
-  min-height: 600px;
+  padding: 118px 0;
+  max-width: 480px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
+
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  margin-bottom: 60px;
+  background-color: $second-bg-color;
 }
 
 .hero__title {
-  color: $white-text-color;
   margin: 0 auto 30px;
+  max-width: 360px;
+
+  font-weight: 900;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 26px;
+
+  color: $white-text-color;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    line-height: 1.36;
+    font-size: 44px;
+  }
 }
 
 .hero__button {
@@ -42,7 +58,8 @@
   padding: 10px 32px;
   transition: color $transition-animation, background-color $transition-animation;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $button-hover-color;
   }
 }
