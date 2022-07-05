@@ -1,9 +1,12 @@
-// .wedo {
-//   padding-bottom: 94px;
-// }
-
 .wedo {
-  display: none;
+  padding-bottom: 94px;
+  @media screena and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.wedo__list {
+  display: flex;
 }
 
 .wedo__title {
@@ -15,10 +18,6 @@
   letter-spacing: 0.03em;
 
   margin-bottom: 50px;
-}
-
-.wedo__list {
-  display: flex;
 }
 
 .wedo__item {

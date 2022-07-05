@@ -280,6 +280,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ol,
@@ -367,8 +369,8 @@ textarea {
   display: inline-block;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   [class*=__container] {
@@ -691,10 +693,10 @@ textarea {
   text-align: center;
   padding: 118px 0;
   max-width: 480px;
+  width: 100%;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -755,6 +757,12 @@ textarea {
     padding-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .skills {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .skills__item:not(:last-child) {
@@ -769,6 +777,38 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills__item {
+    width: 100%;
+  }
+}
+.skills__item::not(:first-child) {
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .skills__item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills__item {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .skills__thumb {
@@ -795,8 +835,12 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 0;
-  text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .skills__label {
+    text-align: center;
+  }
 }
 
 .skills__text {
@@ -806,7 +850,18 @@ textarea {
 }
 
 .wedo {
-  display: none;
+  padding-bottom: 94px;
+}
+@media screena and (max-width: 1199px) {
+  .wedo {
+    display: none;
+  }
+}
+
+.wedo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wedo__title {
@@ -817,12 +872,6 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-}
-
-.wedo__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .wedo__item {

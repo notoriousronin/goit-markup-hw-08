@@ -2,8 +2,8 @@
   display: inline-block;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  width: 100%;
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
