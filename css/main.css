@@ -366,7 +366,7 @@ textarea {
 }
 
 [class*=__container] {
-  display: inline-block;
+  display: block;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -909,41 +909,82 @@ textarea {
 
 .team {
   background-color: #f5f4fa;
-  padding-bottom: 60px;
 }
-
-@media screen and (max-width: 767px) {
-  .team__title {
-    margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .team {
     padding-top: 60px;
-  }
-
-  .team__human {
-    width: 100%;
-  }
-
-  .team__item:not(:last-child) {
-    margin-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (max-width: 1199px) {
+  .team__title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .team__item {
+  padding-bottom: 24px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 767px) {
+  .team__item {
+    max-width: 450px;
+    margin: 0 auto 30px;
+  }
+  .team__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
+  }
 }
 
-.team__description {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.team__human {
+  margin: 0 auto;
 }
 
 .team__label {
@@ -962,6 +1003,11 @@ textarea {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.team__description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team__soc-list {
@@ -1009,33 +1055,38 @@ textarea {
   fill: currentColor;
 }
 
-.clients__item {
-  margin: 15px;
-  height: 92px;
-}
-@media screen and (max-width: 767px) {
-  .clients__item {
-    width: calc((100% - 60px) / 2);
-  }
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
-  .clients__title {
-    margin-bottom: 30px;
-    font-size: 28px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
+
 .clients__title {
-  color: #212121;
   font-weight: 700;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  color: #212121;
+}
+@media screen and (max-width: 1199px) {
+  .clients__title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients__list {
@@ -1045,6 +1096,26 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
+}
+
+.clients__item {
+  margin: 15px;
+  height: 92px;
+}
+@media screen and (max-width: 767px) {
+  .clients__item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__item {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 180px) / 6);
+  }
 }
 
 .clients__link {
@@ -1082,16 +1153,95 @@ textarea {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .footer__container--footer-socials {
-    text-align: center;
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container--footer-socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer__address {
-    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__address {
+    width: 50%;
+    text-align: center;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__join {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+
+.footer__join-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__join-title {
+    width: 50%;
+    text-align: center;
+    margin: 60px auto 20px;
+  }
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .footer__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer__form-input {
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .footer__form-input {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form-input {
+    margin-right: 12px;
   }
 }
 
@@ -1131,16 +1281,6 @@ textarea {
 .contacts__link:hover,
 .contacts__link:focus {
   color: #2196f3;
-}
-
-.footer__join-title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .footer__soc-list {

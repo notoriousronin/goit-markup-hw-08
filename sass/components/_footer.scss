@@ -4,22 +4,73 @@
   padding-bottom: 60px;
 }
 
-// .footer__logo {
-//   padding-top: 60px;
-// }
-
 .footer__container--footer-socials {
-  // display: flex;
-  @media screen and (max-width: 767px) {
-    text-align: center;
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 .footer__address {
-  // margin-right: 70px;
   @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+    text-align: center;
+    margin-right: auto;
+  }
+}
+
+.footer__join {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+
+.footer__join-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+    text-align: center;
+    margin: 60px auto 20px;
+  }
+}
+
+.footer__form {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__form-input {
+  position: relative;
+  width: 100%;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
   }
 }
 
@@ -58,16 +109,6 @@
 .contacts__link:hover,
 .contacts__link:focus {
   color: $accent-text-color;
-}
-
-.footer__join-title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $white-text-color;
 }
 
 .footer__soc-list {
