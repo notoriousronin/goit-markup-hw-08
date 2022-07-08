@@ -138,7 +138,14 @@
           <ul class="wedo__list">
             <li class="wedo__item">
               <div class="wedo__thumb">
-                <img src="./images/logo2.jpg" alt="Набор текста на клавиатуре" width="370" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./images/wedo-1-370w.webp 1x, ./images/wedo-1-370w@2.webp 2x"
+                  />
+                  <source srcset="./images/wedo-1-370w.jpg 1x, ./images/wedo-1-370w@2.jpg 2x" />
+                  <img src="./images/wedo-1-370w.jpg" alt="Набор текста на клавиатуре" />
+                </picture>
                 <div class="wedo__box">
                   <h3 class="wedo__label">Десктопные приложения</h3>
                 </div>
@@ -146,7 +153,14 @@
             </li>
             <li class="wedo__item">
               <div class="wedo__thumb">
-                <img src="./images/logo1.jpg" alt="Работа за компьютером" width="370" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./images/wedo-2-370w.webp 1x, ./images/wedo-2-370w@2.webp 2x"
+                  />
+                  <source srcset="./images/wedo-2-370w.jpg 1x, ./images/wedo-2-370w@2.jpg 2x" />
+                  <img src="./images/wedo-2-370w.jpg" alt="Работа за компьютером" />
+                </picture>
                 <div class="wedo__box">
                   <h3 class="wedo__label">Мобильные приложения</h3>
                 </div>
@@ -154,7 +168,14 @@
             </li>
             <li class="wedo__item">
               <div class="wedo__thumb">
-                <img src="./images/logo3.jpg" alt="Работа за планшетом" width="370" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./images/wedo-3-370w.webp 1x, ./images/wedo-3-370w@2.webp 2x"
+                  />
+                  <source srcset="./images/wedo-3-370w.jpg 1x, ./images/wedo-3-370w@2.jpg 2x" />
+                  <img src="./images/wedo-3-370w.jpg" alt="Работа за планшетом" />
+                </picture>
                 <div class="wedo__box">
                   <h3 class="wedo__label">Дизайнерские решения</h3>
                 </div>
@@ -169,7 +190,38 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img class="team__human" src="./images/photo1.jpg" alt="сотрудник1" width="270" />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width:767px)"
+                  srcset="./images/team-1-450w.webp 1x, ./images/team-1-450w@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px) and (max-width:1199px)"
+                  srcset="./images/team-1-354w.webp 1x, ./images/team-1-354w@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                  srcset="./images/team-1-270w.webp 1x
+                ./images/team-1-270w@2.webp 2x"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team-1-450w.jpg 1x, ./images/team-1-450w@2.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px) and (max-width:1199px)"
+                  srcset="./images/team-1-354w.jpg 1x, ./images/team-1-354w@2.jpg 2x"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images-team-1-270w.jpg 1x, ./images/team-1-270w@2.jpg 2x"
+                />
+                <img class="team__human" src="./images/team-1-450w.jpg" alt="сотрудник1" />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__label">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -206,7 +258,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__human" src="./images/photo2.jpg" alt="сотрудник2" width="270" />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width:767px)"
+                  srcset="./images/team-2-450w.webp 1x, ./images/team-2-450w@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px) and (max-width:1199px)"
+                  srcset="./images/team-2-354w.webp 1x, ./images/team-2-354w@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                  srcset="./images/team-2-270w.webp 1x
+                ./images/team-2-270w@2.webp 2x"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team-2-450w.jpg 1x, ./images/team-2-450w@2.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px) and (max-width:1199px)"
+                  srcset="./images/team-2-354w.jpg 1x, ./images/team-2-354w@2.jpg 2x"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images-team-2-270w.jpg 1x, ./images/team-2-270w@2.jpg 2x"
+                />
+                <img class="team__human" src="./images/team-2-450w.jpg" alt="сотрудник2" />
+              </picture>
               <div class="team__description">
                 <h3 class="team__label">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -243,7 +325,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__human" src="./images/photo3.jpg" alt="сотрудник3" width="270" />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width:767px)"
+                  srcset="./images/team-3-450w.webp 1x, ./images/team-3-450w@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px) and (max-width:1199px)"
+                  srcset="./images/team-3-354w.webp 1x, ./images/team-3-354w@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                  srcset="./images/team-3-270w.webp 1x
+                ./images/team-3-270w@2.webp 2x"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team-3-450w.jpg 1x, ./images/team-3-450w@2.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px) and (max-width:1199px)"
+                  srcset="./images/team-3-354w.jpg 1x, ./images/team-3-354w@2.jpg 2x"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images-team-3-270w.jpg 1x, ./images/team-3-270w@2.jpg 2x"
+                />
+                <img class="team__human" src="./images/team-3-450w.jpg" alt="сотрудник3" />
+              </picture>
               <div class="team__description">
                 <h3 class="team__label">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -280,7 +392,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__human" src="./images/photo4.jpg" alt="сотрудник4" width="270" />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width:767px)"
+                  srcset="./images/team-4-450w.webp 1x, ./images/team-4-450w@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px) and (max-width:1199px)"
+                  srcset="./images/team-4-354w.webp 1x, ./images/team-4-354w@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                  srcset="./images/team-4-270w.webp 1x
+                ./images/team-4-270w@2.webp 2x"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team-4-450w.jpg 1x, ./images/team-4-450w@2.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px) and (max-width:1199px)"
+                  srcset="./images/team-4-354w.jpg 1x, ./images/team-4-354w@2.jpg 2x"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images-team-4-270w.jpg 1x, ./images/team-4-270w@2.jpg 2x"
+                />
+                <img class="team__human" src="./images/team-4-450w.jpg" alt="сотрудник4" />
+              </picture>
               <div class="team__description">
                 <h3 class="team__label">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
