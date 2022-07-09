@@ -373,7 +373,7 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   [class*=__container] {
-    width: 480px;
+    max-width: 480px;
     min-height: 60px;
   }
 }
@@ -573,7 +573,8 @@ textarea {
 @media screen and (max-width: 767px) {
   .header__site-nav {
     display: block;
-    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -716,7 +717,6 @@ textarea {
 .hero {
   text-align: center;
   padding: 118px 0;
-  min-width: 480px;
   width: 100%;
   min-height: 400px;
   margin: 0 auto;
@@ -1208,7 +1208,6 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  min-width: 480px;
 }
 
 @media screen and (min-width: 768px) {

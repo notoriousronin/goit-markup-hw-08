@@ -139,7 +139,7 @@
 .header__site-nav {
   @media screen and (max-width: 767px) {
     display: block;
-    width: 100%;
+    flex-basis: 100%;
   }
 
   @media screen and (min-width: 768px) {
