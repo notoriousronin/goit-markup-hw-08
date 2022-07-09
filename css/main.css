@@ -490,11 +490,11 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .contacts__list {
+    margin-left: 84px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 84px;
   }
 }
 @media screen and (min-width: 1200px) {
