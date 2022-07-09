@@ -513,7 +513,7 @@
     <!--Футер -->
     <footer class="footer">
       <div class="footer__container--footer-socials">
-        <div class="footer__address">
+        <div class="footer__element">
           <a href="./index.html" class="footer__logo"
             >Web<span class="footer__studio">Studio</span></a
           >
@@ -526,16 +526,17 @@
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </address>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="mailto:info@example.com" class="footer__contacts">info@example.com</a>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item">
+              <a href="mailto:info@example.com" class="footer__contact-link">info@example.com</a>
             </li>
-            <li class="footer__item">
-              <a href="tel:+380991111111" class="footer__contacts">+38 099 111 11 11</a>
+            <li class="footer__contact-item">
+              <a href="tel:+380991111111" class="footer__contact-link">+38 099 111 11 11</a>
             </li>
           </ul>
         </div>
-        <div class="footer__join">
+
+        <div class="footer__element">
           <h2 class="footer__join-title">Присоединяйтесь</h2>
           <ul class="footer__soc-list">
             <li class="footer__soc-item">
@@ -569,10 +570,10 @@
           </ul>
         </div>
 
-        <div class="">
+        <div class="footer__element">
           <h2 class="footer__join-title">Подпишитесь на рассылку</h2>
-          <form autocomplete="off">
-            <label for="email" class="footer__subscribe-label">
+          <form class="footer__form" autocomplete="off">
+            <div class="footer__form-input">
               <input
                 class="footer__sub-form"
                 type="email"
@@ -580,7 +581,8 @@
                 id="email"
                 placeholder="E-mail"
               />
-            </label>
+              <label for="email" class="footer__subscribe-label"></label>
+            </div>
             <button class="footer__submit-btn" type="submit">
               Подписаться
               <svg class="footer_submit-icon" width="24px" height="24px">

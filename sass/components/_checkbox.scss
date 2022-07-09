@@ -38,10 +38,18 @@
 }
 
 .check__text {
-  font-size: 14px;
-  line-height: 1.72;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   margin-left: 7px;
+
+  @media screen and (max-width: 449px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check__link {
