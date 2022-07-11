@@ -27,6 +27,7 @@
 
   border-radius: 2px;
   border: 2px solid $title-text-color;
+  flex-shrink: 0;
 }
 
 .check__input:checked + .check__icon {
@@ -43,7 +44,7 @@
   letter-spacing: 0.03em;
   margin-left: 7px;
 
-  @media screen and (max-width: 449px) {
+  @media screen and (max-width: 480px) {
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {

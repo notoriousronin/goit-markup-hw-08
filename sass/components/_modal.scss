@@ -13,7 +13,11 @@
   border-radius: 4px;
   transition: transform $transition-animation;
 
-  @media screen and (min-width: 464px) {
+  @media screen and (max-width: 479px) {
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 480px) {
     position: absolute;
     max-width: 450px;
     padding: 40px;
